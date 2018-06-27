@@ -11,19 +11,22 @@
         <label for="mainSearch" class="hidden">Search</label>
         <input class="mainSearch" id="mainSearch" v-model="query" v-on:keyup.enter="search(query)" v-bind:placeholder="search_placeholder"><button class="searchButton" v-on:click="search(query)">SEARCH</button>
       </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import TopBanner from "./components/TopBanner.vue";
 import NavBar from "./components/NavBar.vue";
+import Footer from "./components/Footer.vue";
 import "./../node_modules/bulma/css/bulma.css";
 
 export default {
   name: "app",
   components: {
     TopBanner,
-    NavBar
+    NavBar,
+    Footer
   }
 };
 </script>
