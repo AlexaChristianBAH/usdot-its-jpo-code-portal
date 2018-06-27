@@ -1,15 +1,19 @@
 <template>
   <div id="NavBar">
 
-    <div class="navigation-bar navBarLinks">
-      <a class="headHovers navBarLinks" href="https://its.dot.gov/index.htm">ITS JPO SITE</a></div>
-      <!-- <a class="headHovers navBarLinks" href="/data/">HOME</a> <div style="font-size: 15px; padding:3px 5px 7px 7px; display: inline;">|</div> -->
-      <!-- <a class="headHovers navBarLinks" href="/data/about/" v-on:click="navBarClick">ABOUT</a><div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-      <a class="headHovers navBarLinks" href="/data/public-access/" v-on:click="navBarClick">PUBLIC ACCESS</a> <div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-      <a class="headHovers navBarLinks" href="/data/metrics/" v-on:click="navBarClick">METRICS</a><div style="font-size: 15px; padding:3px 7px 3px 7px; display: inline;">|</div>
-      <a class="headHovers navBarLinks" href="/data/visualizations/" v-on:click="navBarClick">VISUALIZATIONS</a>
-      </div> -->
+    <div class="columns navigation-bar">
+      <!--===================NAVBAR GENERAL LINKS===================-->
+      <div class="column">
+          <a class="headHovers" href="https://its.dot.gov/index.htm">ITS JPO HOME</a>
+      </div>
+      <!--===================NAVBAR GITHUB LINK===================-->
+      <div class="column">
+        <a class="headHovers" href="/https://github.com/AlexaChristianBAH" style="width: 225px; float: right; text-align: right;">VIEW THIS PROJECT ON GITHUB</a>
+      </div>
+
+    </div>
   </div>
+
 </template>
 
 <script>
@@ -25,5 +29,22 @@ export default {
 <style scoped>
 * {
   outline: 1px solid red;
+}
+.navigation-bar {
+  background: rgba(35, 91, 122, 0.6);
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 38px 0 38px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.headHovers {
+  color: white;
+  font-size: 13px;
+  width: 70px;
+}
+.headHovers:hover {
+  color: white;
+  font-weight: bold;
 }
 </style>

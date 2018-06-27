@@ -51,12 +51,12 @@ export default {
   line-height: 30px;
   float: right;
   margin-top: 8px;
+  vertical-align: top;
 }
 .headHovers {
   color: white;
   font-size: 11px;
   width: 70px;
-  background: #04214f;
 }
 .headHovers:hover {
   color: white;
