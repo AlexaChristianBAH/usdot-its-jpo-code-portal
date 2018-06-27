@@ -58,6 +58,10 @@ export default {
   width: 70px;
   background: #04214f;
 }
+.headHovers:hover {
+  color: white;
+  font-weight: bold;
+}
 .margin-right-30 {
   margin-right: 30px;
 }
@@ -66,9 +70,5 @@ export default {
   margin-left: 25px;
   margin-top: 8px;
   float: left;
-}
-.headHovers:hover {
-  color: white;
-  font-weight: bold;
 }
 </style>
