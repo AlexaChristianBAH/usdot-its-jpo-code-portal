@@ -1,16 +1,19 @@
 <template>
   <div id="app">
+    <TopBanner msg="Top Banner"/>
     <HelloWorld msg="Hello USDOT /code"/>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import TopBanner from "./components/TopBanner.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    HelloWorld,
+    TopBanner
   }
 };
 </script>
