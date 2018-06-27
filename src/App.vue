@@ -8,6 +8,7 @@
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import TopBanner from "./components/TopBanner.vue";
+import "./../node_modules/bulma/css/bulma.css";
 
 export default {
   name: "app",
@@ -25,6 +26,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0px;
+  padding: 0px;
 }
 </style>
