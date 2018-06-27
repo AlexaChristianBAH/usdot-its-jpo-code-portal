@@ -1,16 +1,22 @@
 <template>
   <div id="dotTopBanner">
-    <div class="columns">
+
+    <div class="columns is-vcentered">
+
     <!--===================TOP BANNER DOT LOGO===================-->
-    <a class="column" href="https://transportation.gov">
+    <a id="dotLogoContainer" class="column" href="https://transportation.gov">
       <img id="dotLogo" :src="dotLogo" alt="department of transportation logo" />
     </a>
 
     <!--===================TOP BANNER NAV LINKS===================-->
-    <div id="dotTopLinks" class="column">
-      <a class="headHovers" href="https://www.transportation.gov/mission/about-us">ABOUT DOT&emsp;&nbsp;|</a> 
-      <a class="headHovers" href="https://www.transportation.gov/briefingroom">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
-      <a class="headHovers margin-right-30" href="https://www.transportation.gov/our-activities">&emsp;&nbsp;OUR ACTIVITIES</a>
+    <div class="column">
+      <ul id="dotTopLinks">
+        <li><a class="bannerLink" href="https://www.transportation.gov/mission/about-us">ABOUT DOT</a></li>
+        <li class="spacer">|</li>
+        <li><a class="bannerLink" href="https://www.transportation.gov/briefingroom">BRIEFING ROOM</a></li>
+        <li class="spacer">|</li>
+        <li><a class="bannerLink" href="https://www.transportation.gov/our-activities">OUR ACTIVITIES</a></li>
+      </ul>
     </div>
 
    </div>
@@ -39,30 +45,46 @@ export default {
   width: 100%;
   height: 60px;
   background-color: #152350;
-  padding: 5px 0 0 10px;
 }
-#dotTopLinks {
-  background: #04214f;
-  line-height: 30px;
-  float: right;
-  /* margin-top: 8px; */
-  text-align: right;
+.columns {
+  display: flex;
+  height: 60px;
+  align-items: center;
 }
-.headHovers {
-  color: white;
-  font-size: 11px;
-  width: 70px;
-}
-.headHovers:hover {
-  color: white;
-  font-weight: bold;
-}
-.margin-right-30 {
-  margin-right: 20px;
+#dotLogoContainer {
+  min-width: 240px;
 }
 #dotLogo {
   height: 35px;
   margin-left: 25px;
   float: left;
+}
+.spacer {
+  display: table-cell;
+  text-align: center;
+  width: 20px;
+  color: white;
+}
+li {
+  display: table-cell;
+  text-align: center;
+}
+li a {
+  display: block;
+  text-align: center;
+}
+#dotTopLinks {
+  float: right;
+  min-width: 390px;
+  width: 390px;
+  display: table;
+  table-layout: fixed;
+}
+.bannerLink {
+  color: white;
+  font-size: 11px;
+}
+.bannerLink:hover {
+  font-weight: bold;
 }
 </style>
