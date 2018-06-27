@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
 
-    <!--===================LOGOS===================-->
+    <!--===================FOOTER LOGOS===================-->
     <ul class="logos-container">
       <li><img id="dot-logo" :src="dotLogo" alt="DOT logo"/></li>
       <li class="spacer">|</li>
