@@ -3,23 +3,26 @@
 
     <div class="columns is-vcentered">
 
-    <!--===================TOP BANNER DOT LOGO===================-->
-    <a id="dotLogoContainer" class="column" href="https://transportation.gov">
-      <img id="dotLogo" :src="dotLogo" alt="department of transportation logo" />
-    </a>
+      <!--===================TOP BANNER DOT LOGO===================-->
+      <div class="column">
+        <a id="dotLogoContainer" href="https://transportation.gov">
+          <img id="dotLogo" :src="dotLogo" alt="department of transportation logo"/>
+        </a>
+      </div>
 
-    <!--===================TOP BANNER NAV LINKS===================-->
-    <div class="column">
-      <ul id="dotTopLinks">
-        <li><a class="bannerLink" href="https://www.transportation.gov/mission/about-us">ABOUT DOT</a></li>
-        <li class="spacer">|</li>
-        <li><a class="bannerLink" href="https://www.transportation.gov/briefingroom">BRIEFING ROOM</a></li>
-        <li class="spacer">|</li>
-        <li><a class="bannerLink" href="https://www.transportation.gov/our-activities">OUR ACTIVITIES</a></li>
-      </ul>
-    </div>
+      <!--===================TOP BANNER NAV LINKS===================-->
+      <div class="column">
+        <ul id="dotTopLinks">
+          <li><a class="bannerLink" href="https://www.transportation.gov/mission/about-us">ABOUT DOT</a></li>
+          <li class="spacer">|</li>
+          <li><a class="bannerLink" href="https://www.transportation.gov/briefingroom">BRIEFING ROOM</a></li>
+          <li class="spacer">|</li>
+          <li><a class="bannerLink" href="https://www.transportation.gov/our-activities">OUR ACTIVITIES</a></li>
+        </ul>
+      </div>
 
    </div>
+
   </div>
 </template>
 
@@ -86,5 +89,6 @@ li a {
 }
 .bannerLink:hover {
   font-weight: bold;
+  cursor: pointer;
 }
 </style>

@@ -11,7 +11,7 @@
         <!-- <label for="mainSearch" class="hidden">Search</label>
         <input class="mainSearch" id="mainSearch" v-model="query" v-on:keyup.enter="search(query)" v-bind:placeholder="search_placeholder"><button class="searchButton" v-on:click="search(query)">SEARCH</button>
       </div> -->
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
