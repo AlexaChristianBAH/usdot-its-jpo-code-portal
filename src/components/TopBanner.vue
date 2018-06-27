@@ -5,25 +5,16 @@
       <!--===================TOP BANNER DOT LOGO===================-->
       <div class="column">
         <a style="background: none" href="https://transportation.gov">
-          <img 
-            :src="dotLogo"        
-            style="height: 35px; margin-left: 25px; margin-top: 8px; float: left;"
-            alt="department of transportation logo" />
+          <img id="dotLogo" :src="dotLogo" alt="department of transportation logo" />
         </a>
       </div>
 
       <!--===================TOP BANNER NAV LINKS===================-->
       <div class="column">
         <div id="dotTopLinks">
-          <a  class="headHovers" 
-              href="https://www.transportation.gov/mission/about-us" 
-              style="font-size: 11px; width: 70px; background: #04214f">ABOUT DOT&emsp;&nbsp;|</a> 
-          <a  class="headHovers" 
-              href="https://www.transportation.gov/briefingroom" 
-              style="font-size: 11px; width: 70px; background: #04214f">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
-          <a  class="headHovers" 
-              href="https://www.transportation.gov/our-activities" 
-              style="margin-right: 30px; font-size: 11px; width: 70px; background: #04214f">&emsp;&nbsp;OUR ACTIVITIES</a>
+          <a class="headHovers" href="https://www.transportation.gov/mission/about-us">ABOUT DOT&emsp;&nbsp;|</a> 
+          <a class="headHovers" href="https://www.transportation.gov/briefingroom">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
+          <a class="headHovers margin-right-30" href="https://www.transportation.gov/our-activities">&emsp;&nbsp;OUR ACTIVITIES</a>
         </div>
 
       </div>
@@ -56,27 +47,28 @@ export default {
   padding: 5px 0 0 10px;
 }
 #dotTopLinks {
-  line-height: 30px;
   background: #04214f;
+  line-height: 30px;
   float: right;
   margin-top: 8px;
 }
 .headHovers {
   color: white;
+  font-size: 11px;
+  width: 70px;
+  background: #04214f;
+}
+.margin-right-30 {
+  margin-right: 30px;
+}
+#dotLogo {
+  height: 35px;
+  margin-left: 25px;
+  margin-top: 8px;
+  float: left;
 }
 .headHovers:hover {
   color: white;
   font-weight: bold;
-}
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
 }
 </style>
