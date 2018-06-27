@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <TopBanner msg="Top Banner"/>
-    <HelloWorld msg="Hello USDOT /code"/>
+    <TopBanner />
+    <!-- <HelloWorld msg="Hello USDOT /code"/> -->
   </div>
 </template>
 
