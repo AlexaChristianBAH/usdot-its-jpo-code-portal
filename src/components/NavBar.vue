@@ -1,16 +1,17 @@
 <template>
   <div id="NavBar">
 
-    <div class="columns navigation-bar">
-      <!--===================NAVBAR GENERAL LINKS===================-->
-      <div class="column">
-          <a class="headHovers" href="https://its.dot.gov/index.htm">ITS JPO HOME</a>
+    <div class="navigation-bar">
+      <div class="columns">
+        <!--===================NAVBAR GENERAL LINKS===================-->
+        <div class="column">
+            <a class="headHovers" href="https://its.dot.gov/index.htm">ITS JPO HOME</a>
+        </div>
+        <!--===================NAVBAR GITHUB LINK===================-->
+        <div class="column">
+          <a class="headHovers" href="/https://github.com/AlexaChristianBAH" style="width: 225px; float: right; text-align: right;">VIEW THIS PROJECT ON GITHUB</a>
+        </div>
       </div>
-      <!--===================NAVBAR GITHUB LINK===================-->
-      <div class="column">
-        <a class="headHovers" href="/https://github.com/AlexaChristianBAH" style="width: 225px; float: right; text-align: right;">VIEW THIS PROJECT ON GITHUB</a>
-      </div>
-
     </div>
   </div>
 

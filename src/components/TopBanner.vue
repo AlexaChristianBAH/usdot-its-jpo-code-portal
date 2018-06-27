@@ -1,24 +1,19 @@
 <template>
   <div id="dotTopBanner">
     <div class="columns">
+    <!--===================TOP BANNER DOT LOGO===================-->
+    <a class="column" href="https://transportation.gov">
+      <img id="dotLogo" :src="dotLogo" alt="department of transportation logo" />
+    </a>
 
-      <!--===================TOP BANNER DOT LOGO===================-->
-      <div class="column">
-        <a style="background: none" href="https://transportation.gov">
-          <img id="dotLogo" :src="dotLogo" alt="department of transportation logo" />
-        </a>
-      </div>
-
-      <!--===================TOP BANNER NAV LINKS===================-->
-      <div class="column">
-        <div id="dotTopLinks">
-          <a class="headHovers" href="https://www.transportation.gov/mission/about-us">ABOUT DOT&emsp;&nbsp;|</a> 
-          <a class="headHovers" href="https://www.transportation.gov/briefingroom">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
-          <a class="headHovers margin-right-30" href="https://www.transportation.gov/our-activities">&emsp;&nbsp;OUR ACTIVITIES</a>
-        </div>
-
-      </div>
+    <!--===================TOP BANNER NAV LINKS===================-->
+    <div id="dotTopLinks" class="column">
+      <a class="headHovers" href="https://www.transportation.gov/mission/about-us">ABOUT DOT&emsp;&nbsp;|</a> 
+      <a class="headHovers" href="https://www.transportation.gov/briefingroom">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
+      <a class="headHovers margin-right-30" href="https://www.transportation.gov/our-activities">&emsp;&nbsp;OUR ACTIVITIES</a>
     </div>
+
+   </div>
   </div>
 </template>
 
@@ -50,8 +45,8 @@ export default {
   background: #04214f;
   line-height: 30px;
   float: right;
-  margin-top: 8px;
-  vertical-align: top;
+  /* margin-top: 8px; */
+  text-align: right;
 }
 .headHovers {
   color: white;
@@ -63,12 +58,11 @@ export default {
   font-weight: bold;
 }
 .margin-right-30 {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 #dotLogo {
   height: 35px;
   margin-left: 25px;
-  margin-top: 8px;
   float: left;
 }
 </style>
