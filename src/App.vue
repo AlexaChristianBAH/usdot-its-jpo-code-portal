@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <TopBanner />
+    <NavBar />
   </div>
 </template>
 
 <script>
 import TopBanner from "./components/TopBanner.vue";
+import NavBar from "./components/NavBar.vue";
 import "./../node_modules/bulma/css/bulma.css";
 
 export default {
   name: "app",
   components: {
-    TopBanner
+    TopBanner,
+    NavBar
   }
 };
 </script>
