@@ -1,19 +1,16 @@
 <template>
   <div id="app">
     <TopBanner />
-    <!-- <HelloWorld msg="Hello USDOT /code"/> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import TopBanner from "./components/TopBanner.vue";
 import "./../node_modules/bulma/css/bulma.css";
 
 export default {
   name: "app",
   components: {
-    HelloWorld,
     TopBanner
   }
 };

@@ -1,21 +1,32 @@
 <template>
   <div id="dotTopBanner">
-    <a style="background: none" href="https://transportation.gov">
-      <img 
-        :src="dotLogo"        
-        style="height: 35px; margin-left: 25px; margin-top: 8px;"
-        alt="department of transportation logo" />
-    </a>
-    <div id="dotTopLinks">
-      <a  class="headHovers" 
-          href="https://www.transportation.gov/mission/about-us" 
-          style="font-size: 11px; width: 70px; background: #04214f">ABOUT DOT&emsp;&nbsp;|</a>
-      <a  class="headHovers" 
-          href="https://www.transportation.gov/briefingroom" 
-          style="font-size: 11px; width: 80px; background: #04214f">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
-      <a  class="headHovers" 
-          href="https://www.transportation.gov/our-activities" 
-          style="margin-right: 30px; font-size: 11px; width: 70px; background: #04214f">&emsp;&nbsp;OUR ACTIVITIES</a>
+    <div class="columns">
+
+      <!--===================TOP BANNER DOT LOGO===================-->
+      <div class="column">
+        <a style="background: none" href="https://transportation.gov">
+          <img 
+            :src="dotLogo"        
+            style="height: 35px; margin-left: 25px; margin-top: 8px; float: left;"
+            alt="department of transportation logo" />
+        </a>
+      </div>
+
+      <!--===================TOP BANNER NAV LINKS===================-->
+      <div class="column">
+        <div id="dotTopLinks">
+          <a  class="headHovers" 
+              href="https://www.transportation.gov/mission/about-us" 
+              style="font-size: 11px; width: 70px; background: #04214f">ABOUT DOT&emsp;&nbsp;|</a> 
+          <a  class="headHovers" 
+              href="https://www.transportation.gov/briefingroom" 
+              style="font-size: 11px; width: 70px; background: #04214f">&emsp;&nbsp;BRIEFING ROOM&emsp;&nbsp;|</a>
+          <a  class="headHovers" 
+              href="https://www.transportation.gov/our-activities" 
+              style="margin-right: 30px; font-size: 11px; width: 70px; background: #04214f">&emsp;&nbsp;OUR ACTIVITIES</a>
+        </div>
+
+      </div>
     </div>
   </div>
 </template>
@@ -25,7 +36,7 @@ import dotLogo from "../assets/images/dot_logo.png";
 
 export default {
   name: "TopBanner",
-  data: function() {
+  data: () => {
     return {
       dotLogo: dotLogo
     };
@@ -35,6 +46,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+* {
+  /* outline: 1px solid red; */
+}
 #dotTopBanner {
   width: 100%;
   height: 60px;
@@ -44,6 +58,8 @@ export default {
 #dotTopLinks {
   line-height: 30px;
   background: #04214f;
+  float: right;
+  margin-top: 8px;
 }
 .headHovers {
   color: white;
