@@ -6,7 +6,6 @@
     <img id="arrow-down-icon" :src="ArrowDown" alt="arrow down icon" /> 
     <!-- <img id="ODE2-image" :src="ODE2" alt="ODE2 image" /> -->
     <FeaturedCodeList />
-
     <Footer />
   </div>
 </template>
