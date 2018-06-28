@@ -8,7 +8,7 @@
           <p>{{ description }}</p>
         </li>
       <li>
-        <a :href="link">View Project</a>
+        <a :href="link" target="_blank">View Project</a>
       </li>
     </ul>
 

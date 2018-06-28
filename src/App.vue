@@ -11,6 +11,7 @@
         <!-- <label for="mainSearch" class="hidden">Search</label>
         <input class="mainSearch" id="mainSearch" v-model="query" v-on:keyup.enter="search(query)" v-bind:placeholder="search_placeholder"><button class="searchButton" v-on:click="search(query)">SEARCH</button>
       </div> -->
+    <img id="ODE2-image" :src="ODE2" alt="ODE2 image" />
     <FeaturedCodeList />
 
     <Footer />
@@ -23,6 +24,7 @@ import NavBar from "./components/NavBar.vue";
 import Footer from "./components/Footer.vue";
 import FeaturedCode from "./components/FeaturedCode.vue";
 import FeaturedCodeList from "./components/FeaturedCodeList.vue";
+import ODE2 from "./assets/images/ODE2.png";
 
 export default {
   name: "app",
@@ -32,6 +34,11 @@ export default {
     Footer,
     FeaturedCode,
     FeaturedCodeList
+  },
+  data: () => {
+    return {
+      ODE2: ODE2
+    };
   }
 };
 </script>
@@ -46,5 +53,9 @@ export default {
   margin-top: 10px;
   padding: 0px;
   background: rgb(232, 231, 231);
+}
+#ODE2-image {
+  height: 300px;
+  margin: 20px;
 }
 </style>

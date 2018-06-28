@@ -46,7 +46,6 @@ export default {
   height: 160px;
   text-align: center;
   padding-top: 20px;
-  position: fixed;
   bottom: 0;
 }
 ul {
