@@ -2,9 +2,9 @@
   <div id="app">
     <TopBanner />
     <!-- <NavBar /> -->
-     
     <Hero />
-    <img id="ODE2-image" :src="ODE2" alt="ODE2 image" />
+    <img id="arrow-down-icon" :src="ArrowDown" alt="arrow down icon" /> 
+    <!-- <img id="ODE2-image" :src="ODE2" alt="ODE2 image" /> -->
     <FeaturedCodeList />
 
     <Footer />
@@ -19,6 +19,7 @@ import FeaturedCode from "./components/FeaturedCode.vue";
 import FeaturedCodeList from "./components/FeaturedCodeList.vue";
 import Hero from "./components/Hero.vue";
 import ODE2 from "./assets/images/ODE2.png";
+import ArrowDown from "./assets/images/ContentIndicator.png";
 
 export default {
   name: "app",
@@ -32,7 +33,8 @@ export default {
   },
   data: () => {
     return {
-      ODE2: ODE2
+      ODE2: ODE2,
+      ArrowDown: ArrowDown
     };
   }
 };
@@ -53,5 +55,8 @@ export default {
 #ODE2-image {
   height: 300px;
   margin: 20px;
+}
+#arrow-down-icon {
+  margin: -40px;
 }
 </style>

@@ -4,8 +4,8 @@
     <!--===================FEATURED CODE CARD===================-->
     <ul>
       <li>
-          <h3><strong>{{ title }}</strong></h3> 
-          <p>{{ description }}</p>
+          <p class="featured-code-title">{{ title }}</p> 
+          <p class="featured-code-description">{{ description }}</p>
         </li>
       <li>
         <a :href="link" target="_blank">View Project</a>
@@ -47,15 +47,19 @@ export default {
   vertical-align: top;
 }
 .featured-code:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+  transform: scale(1.03);
 }
-p {
+.featured-code-description {
   padding: 20px;
   text-align: left;
   color: gray;
 }
-h3 {
-  color: #2c3e50;
+.featured-code-title {
+  color: #01893b;
   padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
 }
 </style>
