@@ -1,13 +1,16 @@
 <template>
   <div class="featured-code">
 
-   <ul>
-     <li>
-        <h3><strong>{{ title }}</strong></h3> 
-        <p>{{ description }}</p>
+    <!--===================FEATURED CODE CARD===================-->
+    <ul>
+      <li>
+          <h3><strong>{{ title }}</strong></h3> 
+          <p>{{ description }}</p>
+        </li>
+      <li>
+        <a :href="link">View Project</a>
       </li>
-     <li><a :href="link">View Project</a></li>
-   </ul>
+    </ul>
 
   </div>
 </template>

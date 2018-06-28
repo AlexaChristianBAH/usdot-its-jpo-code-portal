@@ -23,7 +23,6 @@ import NavBar from "./components/NavBar.vue";
 import Footer from "./components/Footer.vue";
 import FeaturedCode from "./components/FeaturedCode.vue";
 import FeaturedCodeList from "./components/FeaturedCodeList.vue";
-import "./../node_modules/bulma/css/bulma.css";
 
 export default {
   name: "app",

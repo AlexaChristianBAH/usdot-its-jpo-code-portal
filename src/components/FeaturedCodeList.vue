@@ -13,6 +13,18 @@
       title="ITS Operational Data Environment (ODE)" 
       description="A real-time data acquisition and distribution software system that processes and routes data from connected vehicles, personal mobile devices, infrastructure sensors, and other sources as needed and distributes data to subscribers based on their needs and level of authorized access." 
       link="https://github.com/usdot-jpo-ode/jpo-ode" />
+      <FeaturedCode 
+      title="Privacy Protection Module (PPM)" 
+      description="Processes real-time data from vehicles and infrastructure devices, routed through the Operational Data Environment (ODE) and retains data within a pre-determined geographic boundary – a process known as geofencing – while suppressing data from outside the boundary." 
+      link="https://github.com/usdot-jpo-ode/jpo-cvdp" />
+      <FeaturedCode 
+      title="Privacy Protection Application (PPA)" 
+      description="Prevents inferences of drivers’ identities from large collections of connected vehicle geo-location data by using road networks, map-matching, and vehicle dynamics to identify and hide potentially sensitive locations based on information theory." 
+      link="https://github.com/usdot-its-jpo-data-portal/privacy-protection-application" />
+      <FeaturedCode 
+      title="Additional Open Source Applications" 
+      description="The Open Source Application Development Portal (OSADP) enables stakeholders to collaborate and share insights, methods, and source code on research projects sponsored by the USDOT Dynamic Mobility Applications program (DMA)" 
+      link="https://www.itsforge.net/" />
   </div>
 </template>
 
