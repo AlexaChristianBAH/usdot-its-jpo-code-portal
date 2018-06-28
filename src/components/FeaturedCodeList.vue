@@ -2,7 +2,7 @@
   <div class="featured-code-list">
 
     <!--===================FEATURED CODE LIST===================-->
-    <h1><strong>Featured Open Source Code</strong></h1>
+    <h1>FEATURED OPEN SOURCE CODE</h1>
 
     <FeaturedCode 
       title="ITS Public Data Hub Sandbox" 
@@ -60,5 +60,9 @@ export default {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+h1 {
+  color: white;
+  font-size: 30px;
 }
 </style>

@@ -2,15 +2,8 @@
   <div id="app">
     <TopBanner />
     <!-- <NavBar /> -->
-      <!-- <div class="TitleText" style="padding-top: 40px;">
-        <p class="searchHeaderText">EXPLORE OUR CODE</p>
-        <h3 style="font-size: 18px; color: black; text-align: center; margin-top: 10px;">Department of Transportation Intelligent Transportation Systems Joint Program Office Code</h3>
-        <h3 style="font-size: 18px; color: black; text-align: center; margin-bottom: 12px;">Welcome to the ITS JPO’s public access point for ITS code</h3> -->
-
-        <!--search bar-->
-        <!-- <label for="mainSearch" class="hidden">Search</label>
-        <input class="mainSearch" id="mainSearch" v-model="query" v-on:keyup.enter="search(query)" v-bind:placeholder="search_placeholder"><button class="searchButton" v-on:click="search(query)">SEARCH</button>
-      </div> -->
+     
+    <Hero />
     <img id="ODE2-image" :src="ODE2" alt="ODE2 image" />
     <FeaturedCodeList />
 
@@ -24,6 +17,7 @@ import NavBar from "./components/NavBar.vue";
 import Footer from "./components/Footer.vue";
 import FeaturedCode from "./components/FeaturedCode.vue";
 import FeaturedCodeList from "./components/FeaturedCodeList.vue";
+import Hero from "./components/Hero.vue";
 import ODE2 from "./assets/images/ODE2.png";
 
 export default {
@@ -33,7 +27,8 @@ export default {
     NavBar,
     Footer,
     FeaturedCode,
-    FeaturedCodeList
+    FeaturedCodeList,
+    Hero
   },
   data: () => {
     return {
@@ -52,7 +47,8 @@ export default {
   color: #2c3e50;
   margin-top: 10px;
   padding: 0px;
-  background: rgb(232, 231, 231);
+  /* background: rgb(232, 231, 231); */
+  background-color: #152350;
 }
 #ODE2-image {
   height: 300px;
