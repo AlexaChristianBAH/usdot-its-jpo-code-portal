@@ -4,7 +4,7 @@ The code for this website is organized into Vue components so that it can be eas
 
 ## Current Iteration Screenshot
 
-![alt text](assets/images/screenshots/USDOT-code-v1.png "Full USDOT JPO code site screenshot")
+![alt text](/src/assets/screenshots/USDOT-code-v1.png "Full USDOT JPO code site screenshot")
 
 ## Site Layout
 
@@ -24,7 +24,8 @@ $ node -v
 4.  Navigate to the client folder of the repository:
 
 ```
-$ cd cloned-repo && cd client
+$ cd cloned-repo  
+$ cd client
 ```
 
 5.  Within the client folder:
