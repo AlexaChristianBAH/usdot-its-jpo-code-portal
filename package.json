@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "unit": "jest"
+    "test": "mocha-webpack --webpack-config webpack.config.js --require test/setup.js test/*.spec.js"
   },
   "dependencies": {
     "bulma": "^0.7.1",
@@ -16,13 +16,24 @@
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
     "@vue/cli-service": "^3.0.0-beta.15",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "css-loader": "^0.28.11",
+    "expect": "^23.2.0",
+    "image-webpack-loader": "^4.3.1",
     "jest": "^23.2.0",
-    "vue-template-compiler": "^2.5.16"
+    "jsdom": "^11.11.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.2.0",
+    "mocha-webpack": "^2.0.0-beta.0",
+    "vue-loader": "^15.2.4",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.14.0"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "mocha": true
     },
     "extends": [
       "plugin:vue/essential",
