@@ -2,15 +2,14 @@
   <div class="featured-code">
 
     <!--===================FEATURED CODE CARD===================-->
-    <ul>
-      <li>
+    <a :href="link" target="_blank">
+      <ul>
+        <li>
           <p class="featured-code-title">{{ title }}</p> 
           <p class="featured-code-description">{{ description }}</p>
         </li>
-      <li>
-        <a :href="link" target="_blank">View Project</a>
-      </li>
-    </ul>
+      </ul>
+    </a>
 
   </div>
 </template>
@@ -36,10 +35,10 @@ export default {
 }
 .featured-code {
   background-color: white;
-  height: 100%;
+  height: 400px;
   min-height: 300px;
-  width: 600px;
-  margin: 1rem;
+  width: 400px;
+  margin: 2rem;
   /* border-radius: 4px; */
   display: inline-block;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -47,19 +46,22 @@ export default {
   vertical-align: top;
 }
 .featured-code:hover {
-  /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
-  transform: scale(1.1);
+  transform: scale(1.08);
+  cursor: pointer;
 }
 .featured-code-description {
   padding: 20px;
   text-align: left;
-  color: gray;
 }
 .featured-code-title {
   color: #01893b;
-  padding-top: 20px;
+  padding: 20px 5px 0 5px;
   text-align: center;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+a {
+  color: black;
 }
 </style>
