@@ -48,7 +48,6 @@ export default {
   color: #2c3e50;
   margin-top: 10px;
   padding: 0px;
-  /* background: rgb(232, 231, 231); */
   background-color: #152350;
 }
 #ODE2-image {
@@ -56,6 +55,8 @@ export default {
   margin: 20px;
 }
 #arrow-down-icon {
-  margin: -40px;
+  margin-top: -30px;
+  height: 69px;
+  width: 69px;
 }
 </style>
