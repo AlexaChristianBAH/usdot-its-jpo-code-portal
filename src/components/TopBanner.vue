@@ -1,28 +1,18 @@
 <template>
   <div id="dotTopBanner">
+    <!--===================TOP BANNER DOT LOGO===================-->
+    <a href="https://transportation.gov">
+      <img id="dotLogo" :src="dotLogo" alt="department of transportation logo"/>
+    </a>
 
-    <div class="columns is-vcentered">
-
-      <!--===================TOP BANNER DOT LOGO===================-->
-      <div id="dotLogoContainer" class="column">
-        <a href="https://transportation.gov">
-          <img id="dotLogo" :src="dotLogo" alt="department of transportation logo"/>
-        </a>
-      </div>
-
-      <!--===================TOP BANNER NAV LINKS===================-->
-      <div class="column">
-        <ul>
-          <li><a class="bannerLink" href="https://www.transportation.gov/mission/about-us">ABOUT DOT</a></li>
-          <li class="spacer">|</li>
-          <li><a class="bannerLink" href="https://www.transportation.gov/briefingroom">BRIEFING ROOM</a></li>
-          <li class="spacer">|</li>
-          <li><a class="bannerLink" href="https://www.transportation.gov/our-activities">OUR ACTIVITIES</a></li>
-        </ul>
-      </div>
-
-   </div>
-
+    <!--===================TOP BANNER NAV LINKS===================-->
+    <ul id="topBannerLinks">
+      <li><a class="bannerLink" href="https://www.transportation.gov/mission/about-us">ABOUT DOT</a></li>
+      <li class="spacer">|</li>
+      <li><a class="bannerLink" href="https://www.transportation.gov/briefingroom">BRIEFING ROOM</a></li>
+      <li class="spacer">|</li>
+      <li><a class="bannerLink" href="https://www.transportation.gov/our-activities">OUR ACTIVITIES</a></li>
+    </ul>
   </div>
 </template>
 
@@ -46,21 +36,22 @@ export default {
 }
 #dotTopBanner {
   width: 100%;
+  min-width: 800px;
   height: 60px;
   background-color: #152350;
-}
-.columns {
-  display: flex;
-  height: 60px;
-  align-items: center;
 }
 #dotLogoContainer {
   min-width: 240px;
 }
 #dotLogo {
   height: 35px;
-  margin-left: 25px;
+  margin: 13px 0px 12px 25px;
   float: left;
+}
+#topBannerLinks {
+  height: 24px;
+  margin: 18px 0px 18px 0px;
+  min-width: 400px;
 }
 .spacer {
   display: table-cell;

@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <TopBanner />
-    <!-- <NavBar /> -->
-    <Hero />
-    <img id="arrow-down-icon" :src="ArrowDown" alt="arrow down icon" /> 
+    <NavBar />
+    <!-- <Hero /> -->
+    <!-- <img id="arrow-down-icon" :src="ArrowDown" alt="arrow down icon" />  -->
     <!-- <img id="ODE2-image" :src="ODE2" alt="ODE2 image" /> -->
-    <FeaturedCodeList />
-    <Footer />
+    <!-- <FeaturedCodeList /> -->
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -46,7 +46,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 10px;
   padding: 0px;
   background-color: #152350;
 }
