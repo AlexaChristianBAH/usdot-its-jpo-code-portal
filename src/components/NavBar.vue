@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation-bar">
+  <div :class="scrollPosition" v-on:scroll="handleScroll">
     <!--===================NAVBAR GENERAL LINKS===================-->
     <a class="headHovers" href="https://its.dot.gov/index.htm">ITS JPO HOME</a>
 
@@ -14,8 +14,19 @@ export default {
   data: () => {
     return {
       githubURL:
-        "https://github.com/bah-interactivemedia/usdot-its-jpo-code-portal"
+        "https://github.com/bah-interactivemedia/usdot-its-jpo-code-portal",
+      scrollPosition: "navigation-bar"
     };
+  },
+  methods: {
+    handleScroll() {
+      window.scrollY > 58
+        ? (this.scrollPosition = "navigation-bar-scrolled")
+        : (this.scrollPosition = "navigation-bar");
+    }
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
   }
 };
 </script>
@@ -26,7 +37,16 @@ export default {
   /* outline: 1px solid red; */
 }
 .navigation-bar {
-  margin-top: 60px;
+  background: rgba(35, 91, 122, 0.6);
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 38px 0 38px;
+  text-align: left;
+  z-index: 100; /* keeps this bar on top */
+  width: 100%;
+  min-width: 600px;
+}
+.navigation-bar-scrolled {
   background: rgba(35, 91, 122, 0.6);
   height: 40px;
   line-height: 40px;
