@@ -30,7 +30,12 @@ export default {
 }
 #Hero {
   background-color: lightgray;
-  background-image: url("../assets/images/hero_background.png");
+  background-image: linear-gradient(
+      rgba(35, 91, 122, 0.4),
+      rgba(35, 91, 122, 0.6)
+    ),
+    url("../assets/images/hero_background.png");
+  background-size: 100% 100%;
   height: 400px;
   color: white;
   padding-top: 30px;
