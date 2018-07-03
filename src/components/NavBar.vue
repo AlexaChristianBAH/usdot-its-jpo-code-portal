@@ -44,6 +44,7 @@ export default {
   text-align: left;
   width: 100%;
   min-width: 600px;
+  z-index: 100;
 }
 .navigation-bar-scrolled {
   background: rgba(35, 91, 122, 0.6);
@@ -53,6 +54,7 @@ export default {
   text-align: left;
   width: 100%;
   min-width: 600px;
+  z-index: 100;
 
   top: 0;
   position: fixed;
