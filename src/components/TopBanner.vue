@@ -39,6 +39,7 @@ export default {
   min-width: 800px;
   height: 60px;
   background-color: #152350;
+  padding: 0px 10px 0px 10px;
 }
 #dotLogoContainer {
   min-width: 240px;
@@ -53,10 +54,18 @@ export default {
   margin: 18px 0px 18px 0px;
   min-width: 400px;
 }
+.bannerLink {
+  color: white;
+  font-size: 11px;
+}
+.bannerLink:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
 .spacer {
   display: table-cell;
   text-align: center;
-  width: 20px;
+  width: 5px;
   color: white;
 }
 li {
@@ -73,13 +82,5 @@ ul {
   width: 390px;
   display: table;
   table-layout: fixed;
-}
-.bannerLink {
-  color: white;
-  font-size: 11px;
-}
-.bannerLink:hover {
-  font-weight: bold;
-  cursor: pointer;
 }
 </style>
