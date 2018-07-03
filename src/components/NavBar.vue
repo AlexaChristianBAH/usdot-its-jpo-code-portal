@@ -60,7 +60,7 @@ export default {
 }
 .headHovers {
   color: white;
-  font-size: 13px;
+  font-size: 12px;
   width: 70px;
 }
 .headHovers:hover {
