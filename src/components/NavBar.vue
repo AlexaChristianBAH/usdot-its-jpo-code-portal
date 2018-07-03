@@ -42,7 +42,6 @@ export default {
   line-height: 40px;
   padding: 0px 38px 0 38px;
   text-align: left;
-  z-index: 100; /* keeps this bar on top */
   width: 100%;
   min-width: 600px;
 }
@@ -50,13 +49,13 @@ export default {
   background: rgba(35, 91, 122, 0.6);
   height: 40px;
   line-height: 40px;
-  padding: 0px 38px 0 38px;
+  padding: 0px 38px 0px 38px;
   text-align: left;
-  top: 0;
-  position: fixed;
-  z-index: 100; /* keeps this bar on top */
   width: 100%;
   min-width: 600px;
+
+  top: 0;
+  position: fixed;
 }
 .headHovers {
   color: white;

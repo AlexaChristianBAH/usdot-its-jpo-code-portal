@@ -1,10 +1,10 @@
 import { mount } from "@vue/test-utils";
-import Hero from "../src/components/Hero.vue";
+import HeroCopy from "../src/components/HeroCopy.vue";
 import expect from "expect";
 
-describe("Hero", () => {
+describe("HeroCopy", () => {
   it("loads successfully", () => {
-    let wrapper = mount(Hero);
+    let wrapper = mount(HeroCopy);
     expect(wrapper.exists()).toBe(true);
   });
 });

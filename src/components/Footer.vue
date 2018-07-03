@@ -80,7 +80,7 @@ li {
 p {
   font-size: 12px;
   color: white;
-  padding: 3px;
+  padding: 1px;
 }
 .questions {
   font-weight: bold;

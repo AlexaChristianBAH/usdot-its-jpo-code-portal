@@ -4,7 +4,7 @@ The code for this website is organized into Vue components so that it can be eas
 
 ## Current Iteration Screenshot
 
-![alt text](/src/assets/screenshots/USDOT-code-v2.png "Full USDOT JPO code site screenshot")
+![alt text](/src/assets/screenshots/USDOT-code-v3.png "Full USDOT JPO code site screenshot")
 
 ## Site Layout
 
